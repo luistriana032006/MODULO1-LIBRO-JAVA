@@ -3,10 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fundamentos de programación</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Fundamentos de Programación en Java</title>
+    <link rel="stylesheet" href="css/styless.css">
 </head>
 <body>
-   
+
+    <header>
+        <h1>Fundamentos de Programación en Java</h1>
+    </header>
+
+    <div class="container">
+        <nav class="main-menu">
+            <h2>Temas</h2>
+            <ul>
+                <li><a href="#introduccion">¿Qué es Java?</a></li>
+                <li><a href="#tipos-de-datos">Tipos de Datos</a></li>
+                <li><a href="#variables-palabras-reservadas">Variables y Palabras Reservadas</a></li>
+                <li><a href="#operadores">Operadores</a></li>
+                <li><a href="#condicionales">Condicionales</a></li>
+                <li><a href="#bucles">Bucles</a></li>
+                <li><a href="#arrays">Arrays</a></li>
+            </ul>
+        </nav>
+
+        <main class="content-area">
+            
+            <article id="introduccion" class="topic">
+                <h2>¿Qué es Java y cómo funciona?</h2>
+                <p>Java es un lenguaje de programación desarrollado por Sun Microsystems en 1995 y ahora es mantenido por Oracle.  Es conocido por su versatilidad, seguridad y portabilidad. </p>
+                <h3>JDK (Java Development Kit)</h3>
+                <p>El JDK es un paquete de herramientas proporcionado por Oracle que contiene todo lo necesario para desarrollar aplicaciones en Java. </p>
+                <h4>Contenido del JDK:</h4>
+                <ul>
+                    <li><strong>JRE (Java Runtime Environment): </strong>
+                        <ul>
+                            <li><strong>JVM (Java Virtual Machine):</strong> Ejecuta el bytecode (.class). </li>
+                            <li><strong>Bibliotecas de clases:</strong>
+                                <ul>
+                                    <li><code>java.lang</code> (clases básicas como String, System). </li>
+                                    <li><code>java.util</code> (colecciones, fechas). </li>
+                                    <li><code>java.io</code> (manejo de archivos). </li>
+                                    <li><code>java.net</code> (conexiones de red). </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Herramientas de desarrollo: </strong>
+                        <ul>
+                            <li><code>javac</code>: Compilador (.java -> .class). </li>
+                            <li><code>java</code>: Ejecutador de aplicaciones. </li>
+                            <li><code>javadoc</code>: Genera documentación HTML. </li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <article id="tipos-de-datos" class="topic">
+                <h2>Tipos de Datos</h2>
+                <p>En los fundamentos de programación tenemos tipos de datos primitivos junto a sus wrappers y los no primitivos. Los tipos de datos son una categorización de los valores que puede almacenar una variable y las operaciones que se pueden hacer con ese tipo de dato. </p>
+                <h3>Datos Primitivos</h3>
+                <p>Los datos primitivos en java son los que almacenan un valor en memoria, están almacenadas en el Stack (memoria rápida para datos efímeros).  No pertenecen a un objeto,  no contienen métodos ni atributos  y son medibles (0, 0.0, false). </p>
+                <h3>Datos Wrapper</h3>
+                <p>En Java, los tipos de datos wrapper pertenecen a clases dedicadas a convertir tipos de datos primitivos a no primitivos.  Se convierten principalmente para poder hacer operaciones de métodos y aplicarle lógica con valores primitivos. </p>
+                <h3>Datos no primitivos (Referenciados)</h3>
+                <p>Son objetos que almacenan una referencia (dirección de memoria) al dato real que está en el heap.  Pueden ser null,  tienen métodos y atributos. </p>
+            </article>
+
+            <article id="variables-palabras-reservadas" class="topic">
+                <h2>Variables y Palabras Reservadas</h2>
+                <h3>¿Qué es una variable?</h3>
+                <p>En programación una variable es un espacio en memoria el cual contiene un único dato.  Con ese dato asignado a la variable se pueden hacer múltiples operaciones según la lógica programada. </p>
+                <h3>¿Qué es una palabra reservada?</h3>
+                <p>Una palabra reservada o una keyword es un término especial definido por el lenguaje que tiene un significado específico y no puede ser usado como identificador (nombre de variable, método, clase etc.). </p>
+            </article>
+            
+            <article id="operadores" class="topic">
+                <h2>Operadores</h2>
+                <p>En Java, una expresión es una combinación de variables, operadores, literales y llamadas a métodos que, al ser evaluada, produce un valor único. </p>
+                <h3>Operadores Aritméticos</h3>
+                <p>Se basan en las operaciones normales como suma, resta, multiplicación, división y resto (módulo). </p>
+                <h3>Operadores de Asignación Compuesta</h3>
+                <p>Combinan una operación aritmética con una asignación en una sola expresión, permitiendo modificar el valor de una variable de forma simplificada (ej. <code>x += 5</code>). </p>
+                <h3>Operadores Relacionales</h3>
+                <p>Son símbolos que comparan dos valores y devuelven un resultado booleano (true o false), como <code>==</code> (igual a) o <code>></code> (mayor que). </p>
+                <h3>Operadores Lógicos</h3>
+                <p>Permiten combinar o modificar expresiones condicionales. Los principales son <code>&&</code> (AND), <code>||</code> (OR) y <code>!</code> (NOT). </p>
+            </article>
+
+            <article id="condicionales" class="topic">
+                <h2>Condicionales (Estructuras de Control)</h2>
+                <p>En Java, una condición es una expresión lógica (que evalúa a true o false) que determina el flujo de ejecución de un programa.  A través de estructuras de control como <code>if-else</code>, <code>switch</code> o el operador ternario, el programa decide qué bloque de código ejecutar. </p>
+                <h3>Estructura if-else</h3>
+                <p>Sirve para determinar si una condición se cumple o no. Si la condición del <code>if</code> es verdadera se ejecuta su bloque, de lo contrario, se ejecuta el bloque del <code>else</code>. </p>
+                <h3>Estructura switch</h3>
+                <p>Es un bloque de control que se utiliza para ejecutar uno o varios bloques de código basándose en el valor de una expresión, siendo una estructura multidireccional. </p>
+            </article>
+
+            <article id="bucles" class="topic">
+                <h2>Bucles (Estructuras de Repetición)</h2>
+                <p>Los bucles son bloques de control que permiten ejecutar un mismo código múltiples veces mientras se cumpla una condición.  Son fundamentales para automatizar tareas repetitivas. </p>
+                <h3>Estructura while</h3>
+                <p>Ejecuta un bloque de código mientras una condición es verdadera. La condición se evalúa antes de cada iteración. </p>
+                <h3>Bucle do-while</h3>
+                <p>Ejecuta un bloque de código al menos una vez, y luego repite la ejecución mientras una condición sea verdadera.  La condición se evalúa después de la primera iteración. </p>
+                <h3>Bucle for</h3>
+                <p>Es una estructura determinista diseñada para ejecutar un bloque de código un número específico de veces, con control sobre la inicialización, condición y actualización. </p>
+            </article>
+
+            <article id="arrays" class="topic">
+                <h2>Arrays (Arreglos)</h2>
+                <p>Los Arrays son estructuras de datos que permiten almacenar múltiples valores del mismo tipo en una sola variable.  Son de tamaño fijo, es decir, una vez definidos, no pueden crecer o reducirse dinámicamente. </p>
+                <h3>Sintaxis Básica</h3>
+                <ul>
+                    <li><strong>Declaración:</strong> <code>tipo[] nombreArray;</code> </li>
+                    <li><strong>Inicialización con tamaño:</strong> <code>nombreArray = new tipo[tamaño];</code> </li>
+                    <li><strong>Inicialización con valores:</strong> <code>tipo[] nombreArray = {valor1, valor2};</code> </li>
+                </ul>
+            </article>
+            
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
