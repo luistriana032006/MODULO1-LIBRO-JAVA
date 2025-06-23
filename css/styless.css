@@ -51,7 +51,7 @@ header h1 {
 
 .main-menu h2 {
     margin-top: 0;
-    color: #4a90e2;
+    color: #5e17eb;
     border-bottom: 2px solid #eee;
     padding-bottom: 0.5rem;
 }
@@ -67,13 +67,14 @@ header h1 {
     padding: 0.75rem 1rem;
     color: #34495e; /* Un azul/gris oscuro para el texto del enlace */
     text-decoration: none;
-    border-radius: 5px;
+    border-radius:5px;
     transition: background-color 0.2s, color 0.2s;
 }
 
 .main-menu li a:hover {
     background-color: #5e17eb ; /* Fondo azul al pasar el ratón */
     color: #ffffff; /* Texto blanco al pasar el ratón */
+   
 }
 
 /* --- Área de Contenido (Columna Derecha) --- */
